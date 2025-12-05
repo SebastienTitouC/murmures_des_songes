@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+    /* Colors */
+    --clr-black: #0F1F2E;
+    --clr-black-20: #19344d;
+    --clr-white: #F8F6F3;
+    --clr-white: #E9E5E0;
+    --clr-brown: #9B7866;
+    --clr-wood: #7E5539;
+    --clr-chair: #EAA643;
+
+    /* Font Family */
+    --font-sans: 'Tenor Sans', sans-serif;
+    --font-serif: 'Playfair Serif', serif;
+
+    /* Common */
+}
+
+body {}
+
+@media (min-width: 475px) {
+    /* Mobile */
+}
+
+@media (min-width: 640px) {
+    /* Mobile large */
+}
+
+@media (min-width: 768px) {
+    /* Tablette */
+}
+
+@media (min-width: 1024px) {
+    /* Desktop */
+}
+
+@media (min-width: 1280px) {
+    /* Desktop large */
+}
+
+@media (min-width: 1536px) {
+    /* Desktop xl */
+}
