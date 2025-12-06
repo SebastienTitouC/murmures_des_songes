@@ -38,30 +38,10 @@
             </nav>
           </li>
           <li>
-            <h1 class="title">Suivez nous</h1>
-            <nav class="subNav">
-              <ul>
-                <li>
-                  <a 
-                    href="https://www.instagram.com/_fermettedes3_/" 
-                    target="_blank">
-                    Instagram
-                  </a>
-                </li>
-                <li><a 
-                    href="https://www.facebook.com/p/La-fermette-des-3-nouveau-compte-61571593081763/"
-                    target="_blank">
-                    Facebook
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </li>
-          <li>
             <br>
             <br>
             <NuxtLink to="/contact">
-              <button class="contactBtn">Contactez nous</button>
+              <button class="contactBtn">Contactez moi</button>
             </NuxtLink>
           </li>
         </ul>

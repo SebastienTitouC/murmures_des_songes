@@ -2,7 +2,6 @@
   <div class="text-center">
     <div class="ornamental_deco_wrapper">
       <img class="ornamental_deco" src="@/assets/svg/papillon.svg" alt="">
-
     </div>
     <h1 class="title">Déroulement d'une séance</h1>
 
@@ -80,11 +79,11 @@ const style = {
   object-position: center;
   border-radius: 10px;
   background-color: var(--clr-brown);
-  margin: 2rem;
+  margin: 4rem 2rem 1.5rem;
 }
 
 .img_wrapper-right {
-  margin: 2rem 2rem 2rem auto;
+  margin: 4rem 2rem 1.5rem auto;
 }
 
 .procedure_img,
@@ -127,6 +126,7 @@ const style = {
   color: var(--clr-black);
   text-align: right;
   padding-right: 1rem;
+  
 }
 
 .subtitle,

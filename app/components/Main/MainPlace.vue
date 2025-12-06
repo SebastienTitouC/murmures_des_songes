@@ -1,5 +1,9 @@
 <template>
   <div class="place_wrapper">
+    <div class="ornamental_deco_wrapper">
+      <img class="ornamental_deco" src="@/assets/svg/coeur.svg" alt="">
+    </div>
+
     <div class="flex justify-center items-center">
       <svg class="laurel size-8" width="118" height="200" viewBox="0 0 118 200" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +47,7 @@
      </div>
 
     <div class="text-center mt-8">
-      <CommonButton message="Plus de photo" to="/a-propos" />
+      <CommonButton message="Plus de photos" to="/a-propos" />
 
     </div>
 
@@ -54,14 +58,22 @@
 
 </script>
 
-<style>
+<style scoped>
 .place_wrapper {
   margin: 4rem 0 0;
   color: var(--clr-black);
   font-family: var(--font-sans);
   /* background: linear-gradient(var(--clr-ghost) 5%, #fff 10%, #fff 95%, var(--clr-ghost) 100%); */
 }
+.ornamental_deco_wrapper {
+  width: fit-content;
+  margin: 4rem auto 0;
+}
 
+.ornamental_deco {
+  width: 64px;
+  height: 64px;
+}
 .place_wrapper .title {
   font-size: 1.2em;
   font-weight: 800;
