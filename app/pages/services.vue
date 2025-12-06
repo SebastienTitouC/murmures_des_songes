@@ -1,7 +1,7 @@
 <template>
   <body>
     <Header />
-    <Main />
+    <Services />
     <FooterMain />
   </body>
 </template>

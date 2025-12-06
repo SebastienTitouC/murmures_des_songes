@@ -1,7 +1,7 @@
 <template>
   <body>
     <Header />
-    <Main />
+    <Hero />
     <FooterMain />
   </body>
 </template>
@@ -11,6 +11,6 @@ import { useCanonical } from '~/composables/useCanonical';
 useCanonical()
 </script>
 
-<style>
+<style scoped>
 
 </style>

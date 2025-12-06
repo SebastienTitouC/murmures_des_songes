@@ -4,21 +4,72 @@
 :root {
     /* Colors */
     --clr-black: #0F1F2E;
-    --clr-black-20: #19344d;
-    --clr-white: #F8F6F3;
-    --clr-white: #E9E5E0;
-    --clr-brown: #9B7866;
-    --clr-wood: #7E5539;
+    --clr-white: #FFF;
+    --clr-ghost: #F4F4F8;
+    --clr-wood: #372316;
     --clr-chair: #EAA643;
+    --clr-bg-footer: #C0574690;  
+    --clr-menu: #F4F4F8;
+    --clr-bg-legals: #f8eeec;  
+    --clr-legal: #C0574690;
+    --clr-strong: #48435C;
 
     /* Font Family */
     --font-sans: 'Tenor Sans', sans-serif;
     --font-serif: 'Playfair Serif', serif;
+    --font-title: 'Alice', serif;
 
+    /* Sizes */
+    --size-xxs: .5rem;
+    --size-xs: .75rem;
+    --size-sm: .875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+    /* Letter spacing */
+    --spacing_title: -0.05rem;
+    
     /* Common */
 }
 
-body {}
+body {
+    background-color: var(--clr-ghost);
+    color: var(--clr-black);
+    font-family: var(--font-sans);
+    font-size: var(--size-base);
+}
+.content_wrapper {
+  max-width: 1080px;
+  margin: 4rem auto 0;
+  background-color: var(--clr-ghost);
+}
+.last_content_wrapper {
+  max-width: 1080px;
+  margin: 4rem auto;
+  background-color: var(--clr-ghost);
+}
+.common_title {
+  font-size: var(--size-2xl);
+  font-weight: 800;
+  font-family: var(--font-serif);
+  font-style: italic;
+  text-align: center;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
 
 @media (min-width: 475px) {
     /* Mobile */

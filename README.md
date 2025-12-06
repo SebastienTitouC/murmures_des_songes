@@ -1,75 +1,21 @@
-# Nuxt Minimal Starter
+# Portfolio website
+## Au Murmure des songes
+Massage au domicile de M., style scratching, papouille.
+Dans un chalet, décoration moderne et épuré. Quelques note à Alice aux pays des merveilles.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Un seul service : Massage - Prix 25€ les 30min
+Début le 15 janvier.
+Méthode de paiement Espèce, Wiro.
 
-## Setup
+Pas de graphique en tete.
 
-Make sure to install dependencies:
+## Dependency : 
+- Nuxt v4.2: [Doc](https://nuxt.com/docs/4.x/getting-started/introduction)
+- Motion v1.7: [Doc](https://motion.dev/docs/vue)
+- Nuxt UI v4.2: [Doc](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+- Nuxt font v0.12: [Doc](https://fonts.nuxt.com/get-started/installation)
 
-```bash
-# npm
+## Project setup
+```
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

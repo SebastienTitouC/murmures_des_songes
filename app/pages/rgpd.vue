@@ -1,9 +1,11 @@
 <template>
-  <body>
+  <div>
     <Header />
-    <Main />
+    <LegalNavSub sentence="R. G. P. D." />
+    <LegalMentionsRGPD />
     <FooterMain />
-  </body>
+
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -11,6 +13,6 @@ import { useCanonical } from '~/composables/useCanonical';
 useCanonical()
 </script>
 
-<style>
-
+<style scoped>
+  
 </style>
