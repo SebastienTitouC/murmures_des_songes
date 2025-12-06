@@ -5,11 +5,17 @@
     /* Colors */
     --clr-black: #0F1F2E;
     --clr-black-20: #19344d;
-    --clr-white: #F8F6F3;
-    --clr-white: #E9E5E0;
+    --clr-white: #FFF;
+    --clr-ghost: #F4F4F8;
+
     --clr-brown: #9B7866;
     --clr-wood: #7E5539;
+    --clr-wood: #372316;
     --clr-chair: #EAA643;
+    --clr-green: #002A32;
+    --clr-pink: #F40076;
+
+    --clr-bg-footer: #99215b; 
 
     /* Font Family */
     --font-sans: 'Tenor Sans', sans-serif;
@@ -18,7 +24,15 @@
     /* Common */
 }
 
-body {}
+body {
+    background-color: var(--clr-ghost);
+    color: var(--clr-white);
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
 
 @media (min-width: 475px) {
     /* Mobile */

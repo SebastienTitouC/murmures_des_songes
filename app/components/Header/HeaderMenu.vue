@@ -1,10 +1,11 @@
 <template>
-  <button class="menu-btn">
-      <svg viewBox="0 0 21 16" state="burger">
-        <rect y="3" width="21" height="2" />
-        <rect y="11" width="21" height="2" />
-      </svg>
-    </button>
+	<button class="menu-btn">
+		<svg viewBox="0 0 21 21" state="burger">
+			<rect y="3" width="21" height="2" />
+			<rect x="4" y="11" width="17" height="2" />
+			<rect x="8" y="19" width="13" height="2" />
+		</svg>
+	</button>
 </template>
 
 <script lang="ts" setup>
@@ -20,11 +21,12 @@
 	grid-area: menu;
 	justify-content: center;
 	justify-self: end;
-  position: relative;
+	position: relative;
 
 }
- .menu-btn svg {
-  color: var(--clr-black);
+
+.menu-btn svg {
+	color: inherit;
 	height: 1rem;
 	width: 1rem;
 	fill: currentColor;

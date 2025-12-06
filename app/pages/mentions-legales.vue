@@ -1,9 +1,7 @@
 <template>
-  <body>
-    <Header />
-    <Main />
-    <FooterMain />
-  </body>
+  <div>
+    
+  </div>
 </template>
 
 <script lang="ts" setup>
