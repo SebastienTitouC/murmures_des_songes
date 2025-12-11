@@ -1,10 +1,8 @@
 <template>
   <div>
     <MainHead />
-    <MainHook />
-    <MainImage />
     <MainHero />
-    <MainPlace />
+    <MainPlace /> 
     <MainProcedure />
     <MainFAQ />
     <MainContact />

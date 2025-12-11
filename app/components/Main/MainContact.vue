@@ -1,21 +1,31 @@
 <template>
   <div class="contact_wrapper">
-    <div class="ornamental_deco_wrapper">
-      <img class="ornamental_deco" src="@/assets/svg/lapin.svg" alt="">
+    <CommonOrnament :svg="rabbitSVG" alt="TODO" />
+
+    <h1 class="common_title mt-4">Informations utiles </h1>
+
+    <div class="p-4">
+      <p>
+        Paiement en espèce, par virement, par Paypal ou Wero.
+      </p>
+      <br>
+      <p>
+        Pratiques non médicales, non thérapeutiques, ni sexuelles
+      </p>
+
     </div>
 
-    <h1 class="title">Informations utiles </h1>
+    <div class="mt-8" >
+      <CommonSend class="m-auto" />
 
-    <p>Paiement en espèce, par virement, par Paypal ou Wero.
-    </p>
-    <p>
-      Pratiques non médicales, non thérapeutiques, ni sexuelles
-    </p>
+    </div>
+
+
   </div>
 </template>
 
 <script lang="ts" setup>
-
+import rabbitSVG from '@/assets/svg/lapin.svg'
 </script>
 
 <style scoped>
@@ -43,4 +53,5 @@
   font-weight: 800;
   margin: 2rem 0;
 }
+
 </style>

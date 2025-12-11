@@ -16,17 +16,51 @@
     --clr-pink: #F40076;
 
     --clr-bg-footer: #99215b; 
+    --clr-bg-footer: #8C86AA; 
+    --clr-bg-footer: #8A7090; 
+    --clr-bg-footer: #C05746;  
+    --clr-menu: #F4F4F8;
 
     /* Font Family */
     --font-sans: 'Tenor Sans', sans-serif;
     --font-serif: 'Playfair Serif', serif;
+    --font-title: 'Alice', serif;
 
+    /* Sizes */
+    --size-xxs: .5rem;
+    --size-xs: .75rem;
+    --size-sm: .875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+    /* Letter spacing */
+    --spacing_title: -0.05rem;
+    
     /* Common */
 }
 
 body {
     background-color: var(--clr-ghost);
-    color: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--font-sans);
+    font-size: var(--size-base);
+}
+.common_title {
+  font-size: var(--size-2xl);
+  font-weight: 800;
+  font-family: var(--font-serif);
+  font-style: italic;
+  text-align: center;
 }
 
 a {

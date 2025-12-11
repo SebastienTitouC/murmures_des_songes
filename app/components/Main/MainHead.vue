@@ -5,7 +5,6 @@
       <Motion :initial='{ opacity: 0, y: "80px" }' :animate='{ opacity: 1, y: "0%", }'
         :transition='{ duration: 0.6, delay: 0.075 }'>
         <h1>Modelage énergétique</h1>
-
       </Motion>
       <Motion :initial='{
         opacity: 0,
@@ -32,7 +31,7 @@
         duration: 0.6,
         delay: 0.075
       }'>
-        <CommonButton message="Appelez-moi" to="tel:+33658004127" />
+        <CommonButton message="Appelez-moi" to="tel:+33658004127" position="center" />
       </Motion>
     </div>
 
@@ -62,7 +61,7 @@ import { Motion } from 'motion-v';
   position: absolute;
   width: min(100vw, 1000px);
   height: 90vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -79,21 +78,24 @@ import { Motion } from 'motion-v';
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
-  color: white;
+  gap: 4rem;
+  margin-top: 82px;
+  color: var(--clr-white);
   text-align: center;
   padding: 0 1rem;
 }
 
 .head h1 {
-  font-family: var(--font-serif);
-  font-family: 'Alice';
+  font-family: var(--font-title);
   font-size: 3.5rem;
-  font-weight: 400;
+  line-height: 3.5rem;
+  font-weight: 800;
 }
 
 .head h2 {
   font-family: var(--font-sans);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--clr-white);
 }
 </style>
