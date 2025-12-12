@@ -1,6 +1,6 @@
 <template>
-  <div class="place_wrapper">
-    <CommonOrnament :svg="heartSVG" alt="Image d'un coeur" />
+  <div class="content_wrapper">
+    <CommonOrnament :svg="heartSVG" alt="Ornement - Coeur" />
 
     <div class="flex justify-center items-center mt-2">
       <img class="laurel size-6" src="@/assets/svg/laurel.svg" alt="Couronne de laurier">
@@ -20,7 +20,7 @@
       </h1>
     </CommonText>
 
-    <CommonButton message="Plus de photos" to="/a-propos" position="center" />
+    <CommonButton message="Découvrir la séance" to="/services" position="center" />
 
   </div>
 </template>
@@ -30,16 +30,4 @@ import heartSVG from '@/assets/svg/coeur.svg'
 
 </script>
 
-<style scoped>
-.place_wrapper {
-  margin: 4rem 0 0;
-}
-
-.place_wrapper .title {
-  font-size: var(--size-2xl);
-  font-weight: 800;
-  font-family: var(--font-serif);
-  font-style: italic;
-}
-
-</style>
+<style scoped></style>

@@ -1,9 +1,6 @@
 <template>
-  <div class="hook_wrapper">
-    <!-- <div class="ornamental_deco_wrapper">
-      <img class="ornamental_deco" src="@/assets/svg/ornamental_deco.svg" alt="ornamental decoration">
-    </div> -->
-    <CommonOrnament class="add" :svg="decoSVG" alt="Image d'un coeur" />
+  <div class="content_wrapper">
+    <CommonOrnament class="add" :svg="decoSVG" alt="Ornement - Coeur" />
 
     <CommonText class="text-center ">
       <h1>
@@ -22,7 +19,7 @@
       </h1>
     </CommonText>
 
-    <CommonButton class="text-right" message="En savoir plus" to="/services" position="right" />
+    <CommonButton class="text-right" message="En savoir plus" to="/a-propos" position="right" />
 
   </div>
 </template>
@@ -31,12 +28,6 @@
 import decoSVG from '@/assets/svg/ornamental_deco.svg'
 
 </script>
-
-<style scoped>
-.hook_wrapper {
-  margin: 4rem 0 0;
-}
-</style>
 
 <style>
 .ornamental_deco_wrapper.add {

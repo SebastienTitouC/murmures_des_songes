@@ -18,10 +18,10 @@
           <NuxtLink to="/a-propos">Qui suis je ?</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/services">Services</NuxtLink>
+          <NuxtLink to="/services">La séance</NuxtLink>
         </li>
-                <li>
-          <NuxtLink to="/contact">Contact</NuxtLink>
+        <li>
+          <NuxtLink to="/plus-d-informations">Plus d'infos</NuxtLink>
         </li>
       </ul>
     </div>
@@ -50,11 +50,36 @@
 
     <div class="line"></div>
 
-    
     <br>
-    <NuxtLink class="flex justify-center items-center" to="/contact">
-      <button class="title contactBtn">Contactez moi</button>
-    </NuxtLink>
+    <div class="flex justify-center items-end gap-1 ">
+      <svg class="size-6" fill="#000" height="800px" width="800px" version="1.1" id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.953 511.953"
+        xml:space="preserve">
+        <g transform="translate(-1)">
+          <g>
+            <g>
+              <path d="M256.995,149.287c-11.776,0-21.333,9.579-21.333,21.333c0,11.755,9.557,21.333,21.333,21.333s21.333-9.579,21.333-21.333
+				C278.328,158.865,268.771,149.287,256.995,149.287z" />
+              <path d="M365.518,38.887C325.987,6.311,274.04-6.639,223.011,3.239C154.147,16.615,100.152,72.273,88.718,141.735
+				c-6.784,41.003,0.725,81.216,21.696,116.267l8.704,14.528c27.861,46.443,56.64,94.485,79.701,143.893l38.848,83.221
+				c3.499,7.509,11.029,12.309,19.328,12.309s15.829-4.8,19.328-12.309l34.965-74.923c23.317-49.984,52.096-98.688,79.957-145.792
+				l12.971-22.016c15.339-26.091,23.445-55.936,23.445-86.293C427.662,119.484,405.006,71.463,365.518,38.887z M256.995,234.62
+				c-35.285,0-64-28.715-64-64s28.715-64,64-64s64,28.715,64,64S292.28,234.62,256.995,234.62z" />
+            </g>
+          </g>
+        </g>
+      </svg>
+      <h2 class="">
+        Situé à Goutevernisse
+      </h2>
+    </div>
+
+    <!-- 
+      <br>
+    <NuxtLink class="flex justify-center items-center" to="tel:0658004127">
+      <button class="title contactBtn">Appelez-moi</button>
+    </NuxtLink> 
+    -->
     <br>
 
     <div class="footer__copyright">
@@ -78,7 +103,7 @@
 </template>
 
 <script lang="ts" setup>
-const toggleMenu = (id) => {
+const toggleMenu = (id: number) => {
   const details = document.querySelector(`.menu__details_${id}`)
   const details_svg = document.querySelector(`.menu__details-svg_${id}`)
   details?.classList.toggle("open")
@@ -88,10 +113,8 @@ const toggleMenu = (id) => {
 
 <style scoped>
 .footer {
-  font-family: "Oxygen", monospace;
   letter-spacing: -.05rem;
   background-color: var(--clr-bg-footer);
-  /* font-size: 1.25rem; */
 
   padding: 2rem;
   border-radius: 16px 16px 0 0;
@@ -119,8 +142,11 @@ const toggleMenu = (id) => {
 }
 
 .title {
-  font-size: 1rem;
-  
+  font-family: var(--font-serif);
+  font-size: var(--size-lg);
+  color: var(--clr-black);
+  font-weight: 900;
+
 }
 
 .btn {
@@ -144,9 +170,10 @@ const toggleMenu = (id) => {
   display: none;
   flex-direction: column;
   gap: .6rem;
-  color: #ffffff;
+  color: var(--clr-white);
+  font-family: var(--font-sans);
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 .5rem;
   margin: 0;
   text-align: left;
   margin-bottom: 1rem;
@@ -186,8 +213,10 @@ const toggleMenu = (id) => {
 
 .contactBtn {
   text-align: center;
-  color: var(--clr-black);
-  background-color: white;
+  color: var(--clr-ghost);
+  background-color: var(--clr-chair);
+
+  font-weight: 600;
   padding: 1rem 1.2rem;
   border-radius: 48px;
 }

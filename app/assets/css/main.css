@@ -4,22 +4,15 @@
 :root {
     /* Colors */
     --clr-black: #0F1F2E;
-    --clr-black-20: #19344d;
     --clr-white: #FFF;
     --clr-ghost: #F4F4F8;
-
-    --clr-brown: #9B7866;
-    --clr-wood: #7E5539;
     --clr-wood: #372316;
     --clr-chair: #EAA643;
-    --clr-green: #002A32;
-    --clr-pink: #F40076;
-
-    --clr-bg-footer: #99215b; 
-    --clr-bg-footer: #8C86AA; 
-    --clr-bg-footer: #8A7090; 
-    --clr-bg-footer: #C05746;  
+    --clr-bg-footer: #C0574690;  
     --clr-menu: #F4F4F8;
+    --clr-bg-legals: #f8eeec;  
+    --clr-legal: #C0574690;
+    --clr-strong: #48435C;
 
     /* Font Family */
     --font-sans: 'Tenor Sans', sans-serif;
@@ -54,6 +47,12 @@ body {
     color: var(--clr-black);
     font-family: var(--font-sans);
     font-size: var(--size-base);
+}
+.content_wrapper {
+  margin: 4rem 0 0;
+}
+.last_content_wrapper {
+  margin: 4rem 0;
 }
 .common_title {
   font-size: var(--size-2xl);

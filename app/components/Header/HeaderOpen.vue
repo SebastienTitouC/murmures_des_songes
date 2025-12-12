@@ -1,69 +1,77 @@
 <template>
   <div v-show="isMenuOpen" class="menu_wrapper" :class='{ "open": isMenuOpen }'>
-    <!-- <CommonButton message="Appelez-moi" to="/" position="none" class="button text-white" :class='{ "appear": isMenuOpen }' /> -->
     <CommonSend class="button" :class='{ "appear": isMenuOpen }' />
     <ul class="link_wrapper" :class='{ "appear": isMenuOpen }'>
-      <li class="link_card">
-        <div class="link_img_wrapper">
-          <img class="link_img object-top" src="/images/marion.JPG" alt="">
-        </div>
+      <NuxtLink to="/a-propos">
+        <li class="link_card">
 
-        <div class="flex flex-col justify-center gap-1 py-2">
-          <div class="small_title">
-            <h1 class="link_title">
-              Qui suis je ?
-            </h1>
-            <svg class="arrow" viewBox="0 0 20 18" fill="none">
-              <path d="M0 9H18" stroke-width="2"></path>
-              <path d="M10 1L18 9L10 17" stroke-width="2"></path>
-            </svg>
+          <div class="link_img_wrapper">
+            <img class="link_img object-top" src="/images/marion.webp" alt="Photo de Marion">
           </div>
-          <p class="link_description">
-            Rencontrez mon univers, découvrez mon histoire.
-          </p>
-        </div>
-      </li>
-      <li class="link_card">
-        <div class="link_img_wrapper">
-          <img class="link_img" src="/images/massage.JPG" alt="">
-        </div>
-        <div class="flex flex-col justify-center gap-1">
-          <div class="small_title">
-            <h1 class="link_title">
-              Le modelage
-            </h1>
-            <svg class="arrow" viewBox="0 0 20 18" fill="none">
-              <path d="M0 9H18" stroke-width="2"></path>
-              <path d="M10 1L18 9L10 17" stroke-width="2"></path>
-            </svg>
+
+          <div class="flex flex-col justify-center gap-1 py-2">
+            <div class="small_title">
+              <h1 class="link_title">
+                Qui suis je ?
+              </h1>
+              <svg class="arrow" viewBox="0 0 20 18" fill="none">
+                <path d="M0 9H18" stroke-width="2"></path>
+                <path d="M10 1L18 9L10 17" stroke-width="2"></path>
+              </svg>
+            </div>
+            <p class="link_description">
+              Rencontrez mon univers, découvrez mon histoire.
+            </p>
           </div>
-          <p class="link_description">
-            Une évasion sensorielle pour apaiser le corps et l'esprit.
-          </p>
-        </div>
-      </li>
-      <li class="link_card">
-        <div class="link_img_wrapper">
-          <img class="link_img object-bottom" src="/images/bureau.JPG" alt="">
-        </div>
-        <div class="flex flex-col justify-center gap-1">
-          <div class="small_title">
-            <h1 class="link_title">
-              Plus d'infos
-            </h1>
-            <svg class="arrow" viewBox="0 0 20 18" fill="none">
-              <path d="M0 9H18" stroke-width="2"></path>
-              <path d="M10 1L18 9L10 17" stroke-width="2"></path>
-            </svg>
+        </li>
+      </NuxtLink>
+
+      <NuxtLink to="/services">
+        <li class="link_card">
+          <div class="link_img_wrapper">
+            <img class="link_img" src="/images/massage.webp" alt="Scratching">
           </div>
-          <p class="link_description">
-            Toutes les réponses à vos questions se trouvent ici.
-          </p>
-        </div>
-      </li>
+          <div class="flex flex-col justify-center gap-1">
+            <div class="small_title">
+              <h1 class="link_title">
+                La séance
+              </h1>
+              <svg class="arrow" viewBox="0 0 20 18" fill="none">
+                <path d="M0 9H18" stroke-width="2"></path>
+                <path d="M10 1L18 9L10 17" stroke-width="2"></path>
+              </svg>
+            </div>
+            <p class="link_description">
+              Une évasion sensorielle pour apaiser le corps et l'esprit.
+            </p>
+          </div>
+        </li>
+      </NuxtLink>
+
+      <NuxtLink to="/plus-d-informations">
+        <li class="link_card">
+          <div class="link_img_wrapper">
+            <img class="link_img object-bottom" src="/images/bureau.webp" alt="Photo du bureau">
+          </div>
+          <div class="flex flex-col justify-center gap-1">
+            <div class="small_title">
+              <h1 class="link_title">
+                Plus d'infos
+              </h1>
+              <svg class="arrow" viewBox="0 0 20 18" fill="none">
+                <path d="M0 9H18" stroke-width="2"></path>
+                <path d="M10 1L18 9L10 17" stroke-width="2"></path>
+              </svg>
+            </div>
+            <p class="link_description">
+              Toutes les réponses à vos questions se trouvent ici.
+            </p>
+          </div>
+        </li>
+      </NuxtLink>
     </ul>
-    <div class="flex justify-center items-end gap-1 text-(--clr-chair)">
-      <img class="size-6" src="@/assets/svg/location.svg" alt="">
+    <div class="flex justify-center items-end gap-1 text-(--clr-chair) opacity-0" :class='{ "appear": isMenuOpen }'>
+      <img class="size-6" src="@/assets/svg/location.svg" alt="Location icon">
       <h2 class="font-bold">
         Situé à Goutevernisse
       </h2>
@@ -79,7 +87,6 @@ defineProps<{
 </script>
 
 <style scoped>
-
 .menu-open {
   background-color: var(--clr-menu);
   color: var(--clr-black);
@@ -101,8 +108,9 @@ defineProps<{
   background-color: var(--clr-menu);
   transition: width .6s;
 }
+
 .menu_wrapper.open {
-  animation: openMenu .4s cubic-bezier(0,.40,.45,.99) forwards;
+  animation: openMenu .4s cubic-bezier(0, .40, .45, .99) forwards;
 }
 
 @keyframes openMenu {
@@ -113,8 +121,9 @@ defineProps<{
 }
 
 .appear {
-  animation: appearEl .3s cubic-bezier(1,0,0,.99) .05s forwards;
+  animation: appearEl .3s cubic-bezier(1, 0, 0, .99) .05s forwards;
 }
+
 @keyframes appearEl {
   to {
     transform: scale(1);
@@ -128,11 +137,13 @@ defineProps<{
   gap: 0rem;
   padding: 0 1rem;
 }
+
 .button {
   color: var(--clr-ghost);
 }
 
-.link_wrapper, .button {
+.link_wrapper,
+.button {
   opacity: 0;
   transform: scale(0.9);
 }
@@ -159,8 +170,10 @@ defineProps<{
   border-radius: .5rem;
   object-fit: cover;
   position: relative;
-  filter: saturate(1.25); /* TODO GIMP ? */
+  filter: saturate(1.25);
+  /* TODO GIMP ? */
 }
+
 .link_img_wrapper {
   position: relative;
 }

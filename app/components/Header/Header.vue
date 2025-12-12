@@ -1,8 +1,8 @@
 <template>
-  <header >
-    <div class="header_wrapper header_underline" :class="{'open': isMenuOpen, 'scrolled': menuComeback}">
-      <header-logo />
-      <header-menu @change="onChange"/>
+  <header>
+    <div class="header_wrapper header_underline" :class="{ 'open': isMenuOpen, 'scrolled': menuComeback }">
+      <header-logo :is-menu-open="isMenuOpen" />
+      <header-menu @change="onChange" />
     </div>
     <header-open :is-menu-open="isMenuOpen" />
   </header>
@@ -11,6 +11,7 @@
 <script lang="ts" setup>
 const isMenuOpen = ref(false)
 const menuComeback = ref(false)
+const route = useRoute()
 const onChange = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
@@ -24,10 +25,16 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
-  if (window.scrollY > window.innerHeight * 0.8) {
+  if (route.path === '/rgpd' || route.path === '/mentions-legales') {
     menuComeback.value = true
   }
-  window.addEventListener('scroll', handleScroll)
+  else {
+    if (window.scrollY > window.innerHeight * 0.8) {
+      menuComeback.value = true
+    }
+    window.addEventListener('scroll', handleScroll)
+
+  }
 })
 
 onUnmounted(() => {
@@ -57,8 +64,8 @@ onUnmounted(() => {
 }
 
 .scrolled {
-  background-image: linear-gradient( var(--clr-ghost) 55%, #ffffffA0);
-  
+  background-image: linear-gradient(var(--clr-ghost) 55%, #ffffffA0);
+
   color: var(--clr-black);
 }
 
@@ -85,6 +92,7 @@ onUnmounted(() => {
   transition: width .3s ease-in;
   opacity: 0;
 }
+
 .header_underline.open::before,
 .header_underline.open::after {
   width: 40%;
@@ -95,5 +103,4 @@ onUnmounted(() => {
   color: var(--clr-black);
   background-image: none;
 }
-
 </style>

@@ -15,10 +15,10 @@
                   <NuxtLink to="/a-propos">Qui je suis ?</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/services">Services</NuxtLink>
+                  <NuxtLink to="/services">La séance</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/contact">Contact</NuxtLink>
+                  <NuxtLink to="/plus-d-informations">Plus d'infos</NuxtLink>
                 </li>
               </ul>
             </nav>
@@ -40,8 +40,8 @@
           <li>
             <br>
             <br>
-            <NuxtLink to="/contact">
-              <button class="contactBtn">Contactez moi</button>
+            <NuxtLink to="tel:0658004127">
+              <button class="contactBtn" >Appelez-moi</button>
             </NuxtLink>
           </li>
         </ul>
@@ -74,8 +74,7 @@
 </script>
 
 <style scoped>
-.footer {
-  font-family: "Oxygen", monospace;
+.footer { 
   letter-spacing: -.05rem;
   background-color: var(--clr-bg-footer);
   color: black;
@@ -96,6 +95,7 @@
 .title {
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-family: var(--font-serif);
 }
 
 .subNav {
@@ -109,7 +109,7 @@
   left: 0;
   width: 1px;
   height: 100%;
-  background-color: #accb9a;
+  background-color: var(--clr-ghost);
 }
 
 .subNav ul {
@@ -134,7 +134,8 @@
 }
 
 .contactBtn {
-  background-color: white;
+  background-color: var(--clr-chair);
+  color: var(--clr-white);
   padding: 1rem 1.2rem;
   border-radius: 48px;
 }

@@ -1,19 +1,20 @@
 <template>
-  <div class="procedure_wrapper">
-    <CommonOrnament :svg="butterflySVG" alt="Ornement papillon" />
+  <div class="content_wrapper">
+    <CommonOrnament :svg="butterflySVG" alt="Ornement - Papillon" />
     <h1 class="common_title">Déroulement d'une séance</h1>
 
     <div>
       <!-- Accueil -->
       <div class="procedure_grid">
-        <CommonImage position="left" image="/images/outils.JPG" alt="TODO" />
+        <CommonImage position="left" image="/images/outils.webp" alt="Outils de soin" />
         <div class="mt-4">
           <h2 class="title">
             Accueil tout en douceur. <br>
           </h2>
 
           <p class="description">
-            Vous arrivez, on respire, on se pose. Je vous explique le déroulement en toute simplicité.
+            Vous êtes accueillie dans un espace calme et apaisant.
+            Je vous explique le déroulement en toute simplicité.
           </p>
         </div>
       </div>
@@ -26,16 +27,16 @@
           </h2>
 
           <p class="description-right">
-            Vous êtes installée habillé, dans une position confortable, sur la table de soin.
+            Vous êtes installée habillé, dans une position confortable, sur la chaise de massage.
             La séance est non verbale, pour vous laisser plonger dans vos sensations.
           </p>
         </div>
-        <CommonImage position="right" image="/images/salle-de-massage2.JPG" alt="TODO" />
+        <CommonImage position="right" image="/images/chaise-de-massage.webp" alt="Chaise de massage" />
       </div>
 
       <!-- Modelage -->
       <div class="procedure_grid">
-        <CommonImage position="left" image="/images/massage.JPG" alt="TODO" />
+        <CommonImage position="left" image="/images/massage.webp" alt="Scratching" />
         <div class="">
           <h2 class="title">
             Modelage & scratching
@@ -58,10 +59,6 @@ import butterflySVG from '@/assets/svg/papillon.svg'
 </script>
 
 <style scoped>
-.procedure_wrapper {
-  margin: 4rem 0 0;
-}
-
 .procedure_grid {
   display: grid;
   grid-template-columns: auto auto;

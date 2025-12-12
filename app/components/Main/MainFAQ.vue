@@ -1,6 +1,6 @@
 <template>
-  <div class="accordion_wrapper">
-    <CommonOrnament :svg="flowerSVG" alt="Fleur d'ornement" />
+  <div class="content_wrapper">
+    <CommonOrnament :svg="flowerSVG" alt="Ornement - Fleur" />
     <h1 class="common_title">Questions fréquentes</h1>
 
     <CommonText>
@@ -44,16 +44,13 @@
       <template #rendez-vous>
         <p class="text_response">
           Prenez rendez-vous par sms uniquement en indiquant des créneaux de disponibilités ainsi que votre prénom. <br>
-          Les séances sont de 30 minutes (20 minutes de soins) pour un tarif unique de 25 euros. <br>
-          Prestations sur la commune de Goutevernisse à 45 min de Toulouse, 15 minutes de Carbonne et Cazères. <br>
-          Adresse communiquée à la confirmation du rendez vous.
         </p>
       </template>
       
     </UAccordion>
 
     <div class="mt-12">
-      <CommonButton message="Plus d'informations" position="right" to="/a-propos" />
+      <CommonButton message="Plus d'informations" position="right" to="/plus-d-informations" />
     </div>
 
   </div>
@@ -85,16 +82,11 @@ const ui = {
   root: 'pl-[2rem] pr-[1rem] text-lg',
   header: 'text-lg',
   content: 'text-[var(--clr-wood)] text-base',
-  trigger: 'font-bold border-0 group transform-gpu will-change-transform hover:bg-muted/50 active:bg-muted/50',
+  trigger: 'font-bold border-0 group transform-gpu will-change-transform hover:bg-muted/5 active:bg-muted/5',
 }
 </script>
 
 <style scoped>
-.accordion_wrapper {
-  margin: 4rem 0 0;
-  font-size: 1rem;
-}
-
 .text_response {
   font-size: var(--size-sm);
   color: var(--clr-wood);

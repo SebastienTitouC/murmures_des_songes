@@ -68,8 +68,10 @@ onUnmounted(() => {
 .image_frame {
   position: relative;
   width: calc(100vw - 8rem);
+  max-width: 300px;
   height: calc((100vw - 8rem) * 1.2);
-  background-image: url("/images/marion.JPG");
+  max-height: 400px;
+  background-image: url("/images/marion.webp");
   background-size: cover;
   background-position: top;
   border-radius: 1rem;
