@@ -13,7 +13,7 @@ defineProps<{
 
 <style>
   .mainTitle {
-  font-family: "Montserrat Alternates", Sans-Serif;
+  font-family: var(--font-sans);
   text-align: center;
   font-weight: 800;
   letter-spacing: .02rem;

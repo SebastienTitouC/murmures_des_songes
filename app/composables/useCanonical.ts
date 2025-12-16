@@ -4,7 +4,7 @@ export const useCanonical = () => {
     link: [
       {
         rel: 'canonical',
-        href: `https://TODO.fr${route.path}`
+        href: `https://aux-murmures-des-songes.fr${route.path}`
       }
     ]
   })

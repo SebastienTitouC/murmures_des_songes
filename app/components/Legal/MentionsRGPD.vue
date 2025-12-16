@@ -4,7 +4,7 @@
     <p>Dernière mise à jour : 12/12/2025</p>
     <h2>Introduction</h2>
     <p class="ta">
-      Dans le cadre de l'exploitation du site https://TODO.fr, je m’engage à protéger la vie privée de mes utilisateurs
+      Dans le cadre de l'exploitation du site https://aux-murmures-des-songes.fr, je m’engage à protéger la vie privée de mes utilisateurs
       et à garantir la sécurité des données personnelles collectées. Cette politique de confidentialité précise quelles
       informations je collecte, comment je les utilise et quels sont vos droits concernant ces données.
     </p>

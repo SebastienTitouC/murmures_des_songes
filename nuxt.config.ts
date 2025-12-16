@@ -12,22 +12,6 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
 
-  fonts: {
-    families: [
-      {
-        name: 'Playfair Display', provider: 'google',
-        weights: ['400 700'], styles: ['normal', 'italic']
-      },
-      {
-        name: 'Tenor Sans', provider: 'google',
-        weights: ['400 700'], styles: ['normal', 'italic']
-      },
-      {
-        name: 'Abril Fatface', provider: 'google',
-        weights: ['400', '800'], styles: ['normal', 'italic']
-      }
-    ]
-  },
   app: {
     head: {
       charset: 'utf-8',
@@ -43,11 +27,11 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow' },
         { property: 'og:title', content: 'Aux murmures des songes | Modelage énergétique' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://TODO.fr/' },
+        { property: 'og:url', content: 'https://aux-murmures-des-songes.fr/' },
         { property: 'og:description', content: 'Services de modelage énergétique et scratching à Goutevernisse' },
       ],
       link: [
-        { rel: "canonical", href: 'https://TODO.fr/' },
+        { rel: "canonical", href: 'https://aux-murmures-des-songes.fr/' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },

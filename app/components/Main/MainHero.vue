@@ -15,8 +15,7 @@
       <CommonText class="">
         <h1>
           Dans mon <b>cocon</b>, je crée un moment suspendu rien que pour vous.
-          C’est une <b>expérience douce</b>, surprenante et profondément <b>réconfortante</b>. Vous en ressortirez
-          <b>apaisé</b>, comme réchauffé de l’intérieur.
+          C’est une <b>expérience douce</b>, surprenante et profondément <b>réconfortante</b>. 
         </h1>
       </CommonText>
       <CommonButton class="grid-btn text-right" message="En savoir plus" to="/a-propos" position="right" />

@@ -9,13 +9,15 @@
       <p>Nom ou raison sociale</p>
       <p>Aux murmures des songes</p>
       <p>Adresse du siège social</p>
-      <p>TODO</p>
+      <p>31310 GOUTEVERNISSE</p>
       <p>Numéro de téléphone</p>
       <p><a href="tel:+33634247461">0634247461</a></p>
-      <p>Adresse e-mail</p>
-      <p><a href="mailto:TODO">TODO</a></p>
       <p>Forme juridique</p>
-      <p>Association</p>
+      <p>Entrepreneur individuel</p>
+      <p>SIREN</p>
+      <p>882 921 828</p>
+      <p>SIRET</p>
+      <p>882 921 828 00019</p>
     </div>
 
     <h2>Editeur du site</h2>

@@ -16,7 +16,7 @@ useCanonical()
 <style scoped>
 .title {
   text-align: center;
-  font-family: "Montserrat Alternates", Sans-Serif;
+  font-family: var(--font-sans);
   font-size: 2.25rem;
   font-weight: 800;
 
