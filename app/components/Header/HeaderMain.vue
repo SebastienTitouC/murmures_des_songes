@@ -1,20 +1,18 @@
 <template>
-  <header>
+  <div>
     <div class="header_wrapper header_underline" :class="{ 'open': isMenuOpen, 'scrolled': menuComeback }">
-      <header-logo :is-menu-open="isMenuOpen" />
-      <header-menu @change="onChange" />
+      <header-logo v-model="isMenuOpen" />
+      <header-menu v-model="isMenuOpen" />
     </div>
-    <header-open :is-menu-open="isMenuOpen" />
-  </header>
+    <header-open v-model="isMenuOpen" />
+  </div>
 </template>
 
 <script lang="ts" setup>
 const isMenuOpen = ref(false)
 const menuComeback = ref(false)
 const route = useRoute()
-const onChange = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
+
 
 const handleScroll = () => {
   if (window.scrollY > window.innerHeight * 0.8) {
@@ -25,6 +23,7 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
+  console.log("mounted")
   if (route.path === '/rgpd' || route.path === '/mentions-legales') {
     menuComeback.value = true
   }

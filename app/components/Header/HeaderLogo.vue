@@ -16,7 +16,8 @@
         des songes
       </h1>
     </Motion>
-    <svg v-show="isMenuOpen" class="home_button" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+    <svg 
+      v-show="model" class="home_button" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
       viewBox="0 0 24 24">
       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
@@ -29,11 +30,12 @@
 
 <script lang="ts" setup>
 import { Motion } from 'motion-v';
-defineProps<{
-  isMenuOpen: boolean
-}>()
+
+const model = defineModel<boolean>()
+
 
 const scrollToTop = () => {
+  model.value = false
   window.scrollTo({
     top: 0,
     behavior: 'smooth'

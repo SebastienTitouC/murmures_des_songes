@@ -1,10 +1,7 @@
 <template>
   <div>
-    <Header />
     <LegalNavSub sentence="Mentions légales" />
     <LegalMentionsLegales />
-    <FooterMain />
-
   </div>
 </template>
 

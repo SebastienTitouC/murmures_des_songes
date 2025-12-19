@@ -1,9 +1,10 @@
 <template>
-  <div class="wrapper" :style="{ backgroundImage: `url(${props.bgImage})` }">
+  <div class="wrapper">
+    <img :src="bgImage" preload fetchpriority="high" decoding="async" class="bg" alt="Image d'en tête">
     <div class="filter"></div>
     <div class="head">
       <Motion :initial='{ opacity: 0, y: "80px" }' :animate='{ opacity: 1, y: "0%", }'
-        :transition='{ duration: 0.6, delay: 0.075 }'>
+        :transition='{ duration: 0.6, delay: 0.0 }'>
         <h1>
           {{ mainTitle }}
         </h1>
@@ -16,7 +17,7 @@
         y: "0%",
       }' :transition='{
         duration: 0.6,
-        delay: 0.075
+        delay: 0.0
       }'>
         <h2>
           {{ description }}
@@ -31,7 +32,7 @@
         y: "0%",
       }' :transition='{
         duration: 0.6,
-        delay: 0.075
+        delay: 0.0
       }'>
         <CommonSend class="button" />
       </Motion>
@@ -43,7 +44,7 @@
 <script lang="ts" setup>
 import { Motion } from 'motion-v';
 
-const props = defineProps<{
+defineProps<{
   mainTitle: string,
   description: string,
   withButton: boolean,
@@ -54,18 +55,23 @@ const props = defineProps<{
 
 <style scoped>
 .wrapper {
+  position: relative;
   width: min(100vw, 1440px);
   min-height: 660px;
   height: min(90vh, 850px);
   margin: auto;
-  background-image: linear-gradient(var(--clr-white), var(--clr-chair));
-  background-position: 50% 25%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
   z-index: 3;
   background-color: var(--clr-ghost);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+  z-index: 1;
 }
 
 .filter {
@@ -104,7 +110,7 @@ const props = defineProps<{
   font-size: 3.5rem;
   line-height: 3.5rem;
   font-weight: 900;
-  text-shadow:0 1px 0 #101010;
+  text-shadow: 0 1px 0 #101010;
 }
 
 .head h2 {
@@ -113,7 +119,7 @@ const props = defineProps<{
   font-weight: 900;
   color: var(--clr-white);
   max-width: 420px;
-  text-shadow:0 1px 0 #101010;
+  text-shadow: 0 1px 0 #101010;
 
 }
 

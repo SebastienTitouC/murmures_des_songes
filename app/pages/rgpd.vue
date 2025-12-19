@@ -1,10 +1,7 @@
 <template>
   <div>
-    <Header />
     <LegalNavSub sentence="R. G. P. D." />
     <LegalMentionsRGPD />
-    <FooterMain />
-
   </div>
 </template>
 

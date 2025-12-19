@@ -1,8 +1,8 @@
 <template>
-  <div v-show="isMenuOpen" class="menu_wrapper" :class='{ "open": isMenuOpen }'>
-    <CommonSend class="button" :class='{ "appear": isMenuOpen }' />
-    <ul class="link_wrapper" :class='{ "appear": isMenuOpen }'>
-      <NuxtLink to="/a-propos">
+  <div v-show="model" class="menu_wrapper" :class='{ "open": model }'>
+    <CommonSend class="button" :class='{ "appear": model }' />
+    <ul class="link_wrapper" :class='{ "appear": model }'>
+      <NuxtLink to="/a-propos" @click="onClick">
         <li class="link_card">
 
           <div class="link_img_wrapper">
@@ -26,7 +26,7 @@
         </li>
       </NuxtLink>
 
-      <NuxtLink to="/services">
+      <NuxtLink to="/services" @click="onClick">
         <li class="link_card">
           <div class="link_img_wrapper">
             <img class="link_img" src="/images/massage.webp" alt="Scratching" width="120px" height="120px" >
@@ -48,7 +48,7 @@
         </li>
       </NuxtLink>
 
-      <NuxtLink to="/plus-d-informations">
+      <NuxtLink to="/plus-d-informations" @click="onClick">
         <li class="link_card">
           <div class="link_img_wrapper">
             <img class="link_img object-bottom" src="/images/bureau.webp" alt="Photo du bureau" width="120px" height="120px" >
@@ -71,7 +71,7 @@
       </NuxtLink>
     </ul>
 
-    <div class="flex justify-center items-end gap-1 text-(--clr-chair) opacity-0 mb-8" :class='{ "appear": isMenuOpen }'>
+    <div class="flex justify-center items-end gap-1 text-(--clr-chair) opacity-0 mb-8" :class='{ "appear": model }'>
       <img class="size-6" src="@/assets/svg/location.svg" alt="Location icon" width="24px" height="24px" >
       <h2 class="font-bold">
         Situé à Goutevernisse
@@ -81,9 +81,13 @@
 </template>
 
 <script lang="ts" setup>
-defineProps<{
-  isMenuOpen: boolean
-}>()
+
+const model = defineModel<boolean>()
+
+const onClick = () => {
+	model.value = false
+}
+
 
 </script>
 

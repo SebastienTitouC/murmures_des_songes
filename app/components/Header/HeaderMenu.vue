@@ -1,22 +1,19 @@
 <template>
 	<button class="menu-btn" @click="onClick" aria-label="Menu Button">
 		<svg viewBox="0 0 21 21" state="burger">
-			<rect class="g_rect rect1" y="3" width="21" height="2" />
-			<rect class="g_rect rect2" x="4" y="11" width="17" height="2" />
-			<rect class="g_rect rect3" x="4" y="11" width="17" height="2" />
-			<rect class="g_rect rect4" x="8" y="19" width="13" height="2" />
+			<rect class="g_rect rect1" :class="{'active': model}" y="3" width="21" height="2" />
+			<rect class="g_rect rect2" :class="{'active': model}" x="4" y="11" width="17" height="2" />
+			<rect class="g_rect rect3" :class="{'active': model}" x="4" y="11" width="17" height="2" />
+			<rect class="g_rect rect4" :class="{'active': model}" x="8" y="19" width="13" height="2" />
 		</svg>
 	</button>
 </template>
 
 <script lang="ts" setup>
-const emit = defineEmits<{
-	(e: 'change'): void
-}>()
+const model = defineModel<boolean>()
+
 const onClick = () => {
-	const matches = document.querySelectorAll('.g_rect')
-	matches.forEach((el) => { el.classList.toggle('active') })
-	emit("change")
+	model.value = !model.value
 }
 </script>
 
@@ -67,6 +64,7 @@ const onClick = () => {
 .rect3.active {
 	animation: animRect3 1.2s ease-in-out forwards;
 }
+
 .rect4.active {
 
 	animation: animRect4 1.2s ease-in-out forwards;
@@ -130,9 +128,11 @@ const onClick = () => {
 		transform: translateY(-8px) rotate(0);
 		opacity: 1;
 	}
+
 	71% {
 		opacity: 0;
 	}
+
 	100% {
 		transform: translateY(-8px);
 		opacity: 0;

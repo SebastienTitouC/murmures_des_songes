@@ -1,9 +1,5 @@
 <template>
-  <body>
-    <Header />
-    <Main />
-    <FooterMain />
-  </body>
+  <Main />
 </template>
 
 <script lang="ts" setup>
@@ -11,6 +7,4 @@ import { useCanonical } from '~/composables/useCanonical';
 useCanonical()
 </script>
 
-<style>
-
-</style>
+<style></style>
