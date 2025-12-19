@@ -3,17 +3,34 @@
   <div class="last_content_wrapper">
     <CommonOrnament :svg="massageSVG" alt="Ornement - Massage" />
 
-    <CommonText class="max-w-[600px] m-auto">
-      <h1>
-        Un soin qui <b>apaise</b> en profondeur tout en éveillant vos sens, mêlant
-        <b>douceur</b>, légèreté et bien-être subtil. Un instant suspendu où l’on se relâche, où l’on se reconnecte, où
-        l’on <b>ressent</b>.
-      </h1>
-    </CommonText>
+    <div class="content_grid">
+      <ServicesVideo />
+      <div>
+        <div class="flex justify-center gap-4">
+          <img v-if="!videoControls.playing" class="controls" src="@/assets/svg/play.svg" alt="Lire la vidéo"
+            width="54px" height="54px" @click="play()">
+          <img v-else class="controls" src="@/assets/svg/pause.svg" alt="Mettre en pause la vidéo" width="54px"
+            height="54px" @click="stop()">
+          <img v-if="!videoControls.sound" class="controls" src="@/assets/svg/soundOff.svg" alt="Activer le son"
+            width="54px" height="54px" @click="turnOnSound()">
+          <img v-else class="controls" src="@/assets/svg/soundOn.svg" alt="Désactiver le son" width="54px" height="54px"
+            @click="turnOffSound()">
+
+        </div>
+
+        <CommonText class="max-w-[600px] m-auto">
+          <h1>
+            Un soin qui <b>apaise</b> en profondeur tout en éveillant vos sens, mêlant
+            <b>douceur</b>, légèreté et bien-être subtil. Un instant suspendu où l’on se relâche, où l’on se reconnecte,
+            où l’on <b>ressent</b>.
+          </h1>
+        </CommonText>
+      </div>
+    </div>
 
     <ServicesProcedure />
 
-    <CommonText class="md:mt-8" >
+    <CommonText class="md:mt-8">
       <h1>
         Les séances sont de <b>30 minutes</b> (20 minutes de soins) pour un <b>tarif unique</b> de <b>25 euros</b>.
       </h1>
@@ -38,17 +55,67 @@
 <script lang="ts" setup>
 import massageSVG from '@/assets/svg/massage.svg'
 
+const videoControls = ref({
+  playing: true,
+  sound: false
+})
+
+const turnOnSound = () => {
+  const video = document.querySelector("video");
+  if (!video) return
+  video.muted = false;
+  video.volume = 1;
+  videoControls.value.sound = true
+}
+const turnOffSound = () => {
+  const video = document.querySelector("video");
+  if (!video) return
+  video.muted = true;
+  video.volume = 0;
+  videoControls.value.sound = false
+}
+
+const play = () => {
+  const video = document.querySelector("video");
+  if (!video) return
+  videoControls.value.playing = true
+  video.play();
+
+}
+
+const stop = () => {
+  const video = document.querySelector("video");
+  if (!video) return
+  videoControls.value.playing = false
+  video.pause();
+}
+
+
+const handleVisibility = () => {
+  turnOffSound()
+  if (document.hidden) {
+    stop()
+  }
+  else if (!document.hidden) {
+    play()
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('visibilitychange', handleVisibility)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('visibilitychange', handleVisibility)
+})
 </script>
 
 <style scoped>
-.procedure_grid {
+.content_grid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0;
-  align-items: start;
-  margin-top: 2rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
 }
 
 .title,
@@ -76,5 +143,52 @@ import massageSVG from '@/assets/svg/massage.svg'
 .description-right {
   text-align: right;
   padding: 0 .75rem 0 .25rem;
+}
+
+.controls {
+  background-color: var(--clr-chair);
+  padding: .5rem .75rem;
+  border-radius: 4px;
+}
+
+@media (min-width: 640px) {
+
+  /* Mobile large */
+
+}
+
+@media (min-width: 768px) {
+
+  /* Tablette */
+  .content_grid {
+    margin: 0 2rem;
+
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  /* Desktop */
+  .content_grid {
+    grid-template-columns: max-content 500px;
+    justify-content: center;
+    gap: 0 4rem;
+
+  }
+
+}
+
+@media (min-width: 1280px) {
+  /* Desktop large */
+}
+
+@media (min-width: 1536px) {
+  /* Desktop xl */
 }
 </style>

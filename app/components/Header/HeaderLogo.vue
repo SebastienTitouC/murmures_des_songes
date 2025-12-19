@@ -1,5 +1,5 @@
 <template>
-  <CommonLink to="/" class="enterprise">
+  <CommonLink to="/" class="enterprise" @click.prevent="scrollToTop">
     <Motion :initial='{
       opacity: 0,
       scaleX: 0.55,
@@ -32,6 +32,13 @@ import { Motion } from 'motion-v';
 defineProps<{
   isMenuOpen: boolean
 }>()
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
 </script>
 
 <style scoped>
