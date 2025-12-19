@@ -17,7 +17,7 @@
           Un moment pour lâcher prise sur tout ce qui peut vous tracasser. A l’aide du « scratching » ou plus
           communément des « papouilles » détendez-vous rapidement. <br>
           La pratique n’est pas médicale ni thérapeutique. <br>
-          Il s’agit de bien être sensoriel localisé sur le haut du
+          Il s’agit de bien-être sensoriel localisé sur le haut du
           corps (tête, épaules, dos, bras). Le tout associé a une démarche non verbale mais énergétique afin d’apaiser
           votre âme. <br>
           C’est donc une approche douce et une invitation à sa propre reconnexion.
@@ -34,7 +34,7 @@
       </template>
       <template #concept>
         <p class="text_response">
-          Durant des phases de stresse intense, j’ai cherché un moyen d’apaiser mon mental. <br>
+          Durant des phases de stress intense, j’ai cherché un moyen d’apaiser mon mental. <br>
           J’ai alors découvert l’ASMR qui reproduit parfois ses « papouilles ». Le cerveau à l’impression de ressentir
           la sensation de bien-être que
           cela procure. J’ai eu envie d’aller plus loin, et de le proposer de manière réelle afin d’aider des personnes
@@ -61,11 +61,11 @@ import flowerSVG from '@/assets/svg/fleur.svg'
 
 const items = ref([
   {
-    label: 'Qu’est-ce qu’un modelage énergétique ?',
+    label: 'Qu\'est-ce qu’un modelage énergétique ?',
     slot: 'modelage',
   },
   {
-    label: 'Qu’est ce que le scratching ?',
+    label: 'Qu\'est-ce que le scratching ?',
     slot: 'scratching',
   },
   {

@@ -13,7 +13,7 @@
           </h2>
 
           <p class="description">
-            Vous êtes accueillie dans un espace calme et apaisant.
+            Vous êtes accueilli.e dans un espace calme et apaisant.
             Je vous explique le déroulement en toute simplicité.
           </p>
         </div>
@@ -27,7 +27,7 @@
           </h2>
 
           <p class="description-right">
-            Vous êtes installée habillé, dans une position confortable, sur la chaise de massage.
+            Vous êtes installé.e habillé.e, dans une position confortable, sur la chaise de massage.
             La séance est non verbale, pour vous laisser plonger dans vos sensations.
           </p>
         </div>

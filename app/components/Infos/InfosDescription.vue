@@ -73,7 +73,7 @@
           C’est avant tout un moment pour vous. <br> <br>
           Un moment pour lâcher prise sur tout ce qui peut vous tracasser. A l’aide du « scratching » ou plus
           communément des « papouilles » détendez-vous rapidement. <br>
-          Il s’agit de bien être sensoriel localisé sur le haut du
+          Il s’agit de bien-être sensoriel localisé sur le haut du
           corps (tête, épaules, dos, bras). Le tout associé a une démarche non verbale mais énergétique afin d’apaiser
           votre âme. <br>
           C’est donc une approche douce et une invitation à sa propre reconnexion.
@@ -82,7 +82,7 @@
   
       <div class="card">
         <CommonImage position="left" image="/images/massage.webp" alt="Scratching" />
-        <h1>Qu’est ce que le scratching ?</h1>
+        <h1>Qu'est-ce que le scratching ?</h1>
         <p>
           Il s’agit d’une technique de relaxation réalisée avec le bout des doigts ou des accessoires (pinceaux, peigne,
           baguette) qui n’utilise ni pression musculaire ni manipulations mais un toucher très léger. <br>
@@ -96,7 +96,7 @@
         <CommonImage position="left" image="/images/entree_livres.webp" alt="Photo de l'entrée" />
         <h1>Pourquoi ce concept ?</h1>
         <p>
-          Durant des phases de stresse intense, j’ai cherché un moyen d’apaiser mon mental. <br>
+          Durant des phases de stress intense, j’ai cherché un moyen d’apaiser mon mental. <br>
           J’ai alors découvert l’ASMR qui reproduit parfois ses « papouilles ». Le cerveau à l’impression de ressentir
           la sensation de bien-être que
           cela procure. J’ai eu envie d’aller plus loin, et de le proposer de manière réelle afin d’aider des personnes

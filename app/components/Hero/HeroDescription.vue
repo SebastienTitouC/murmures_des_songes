@@ -20,7 +20,7 @@
 
         <p class="description">
           ... et si deux mots me qualifient c’est bien ceux qui caractérisent les natifs des poissons, dont je fais
-          partis, qui sont sensibles et rêveurs.
+          partie, qui sont sensibles et rêveurs.
         </p>
       </div>
     </div>
@@ -49,7 +49,7 @@
 
         <p class="description">
           ... de façon discrète depuis plus de 10 ans dans ma première activité qui est le ménage, j’ai envie, dès à
-          présent d’être encore au plus prêt des âmes et de vous offrir une bulle de douceur.
+          présent d’être encore au plus près des âmes et de vous offrir une bulle de douceur.
         </p>
       </div>
     </div>
