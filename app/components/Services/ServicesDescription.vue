@@ -3,7 +3,7 @@
   <div class="last_content_wrapper">
     <CommonOrnament :svg="massageSVG" alt="Ornement - Massage" />
 
-    <div class="content_grid">
+    <div v-if="videoControls.show" class="content_grid">
       <ServicesVideo />
       <div>
         <div class="flex justify-center gap-4">
@@ -56,6 +56,7 @@
 import massageSVG from '@/assets/svg/massage.svg'
 
 const videoControls = ref({
+  show: true,
   playing: true,
   sound: false
 })
@@ -94,10 +95,10 @@ const stop = () => {
 const handleVisibility = () => {
   turnOffSound()
   if (document.hidden) {
-    stop()
+    videoControls.value.show = false
   }
   else if (!document.hidden) {
-    play()
+    videoControls.value.show = true
   }
 }
 
