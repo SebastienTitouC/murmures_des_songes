@@ -13,6 +13,7 @@
     "@nuxt/eslint": "^1.11.0",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/ui": "^4.2.1",
+    "@nuxtjs/sitemap": "^7.5.0",
     "eslint": "^9.39.1",
     "motion-v": "^1.7.4",
     "nuxt": "^4.2.1",

@@ -6,11 +6,12 @@ export default defineNuxtConfig({
     '@/assets/css/normalize.css',
     '@/assets/css/main.css',
   ],
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/ui'
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/ui', '@nuxtjs/sitemap'],
+
+  site: {
+    url: 'https://aux-murmures-des-songes.fr',
+    name: 'My Awesome Website'
+  },
 
   app: {
     head: {
