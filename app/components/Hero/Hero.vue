@@ -1,7 +1,7 @@
 <template>
   <div>
     <CommonHead mainTitle=" À propos de moi"
-      description="Marion, praticienne en massages bien-être à domicile à Goutevernisse." :with-button='false'
+      description="Marion, praticienne en massages bien-être à mon domicile à Goutevernisse." :with-button='false'
       bg-image="/images/marion.webp" />
     <HeroDescription />
   </div>

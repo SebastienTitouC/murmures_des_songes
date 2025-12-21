@@ -18,7 +18,7 @@
           communément des « papouilles » détendez-vous rapidement. <br>
           La pratique n’est pas médicale ni thérapeutique. <br>
           Il s’agit de bien-être sensoriel localisé sur le haut du
-          corps (tête, épaules, dos, bras). Le tout associé a une démarche non verbale mais énergétique afin d’apaiser
+          corps (tête, épaules, dos, bras). Le tout associé à une démarche non verbale mais énergétique afin d’apaiser
           votre âme. <br>
           C’est donc une approche douce et une invitation à sa propre reconnexion.
         </p>
@@ -35,7 +35,7 @@
       <template #concept>
         <p class="text_response">
           Durant des phases de stress intense, j’ai cherché un moyen d’apaiser mon mental. <br>
-          J’ai alors découvert l’ASMR qui reproduit parfois ses « papouilles ». Le cerveau à l’impression de ressentir
+          J’ai alors découvert l’ASMR qui reproduit parfois ces « papouilles ». Le cerveau à l’impression de ressentir
           la sensation de bien-être que
           cela procure. J’ai eu envie d’aller plus loin, et de le proposer de manière réelle afin d’aider des personnes
           qui ont besoin d’un instant de repos et qu’on prenne soin d’eux.
