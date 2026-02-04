@@ -32,6 +32,14 @@
           l’esprit.
         </p>
       </template>
+      <template #papouilles>
+        <p class="text_response">
+          Le scratching et donc les papouilles permettent une détente rapide et un sentiment de réconfort. <br>
+          Se faire papouiller c’est prendre le temps de s’évader dans un monde intérieur ou tout est doux. <br>
+          Vous êtes stréssé.e, surmené.e, fatigué.e ? La papouille est faite pour vous ! <br>
+          Venez vous détendre et laissez vous glisser dans cet univers apaisant.
+        </p>
+      </template>
       <template #concept>
         <p class="text_response">
           Durant des phases de stress intense, j’ai cherché un moyen d’apaiser mon mental. <br>
@@ -50,7 +58,7 @@
     </UAccordion>
 
     <div class="mt-12">
-      <CommonButton message="Plus d'informations" position="right" to="/plus-d-informations" />
+      <CommonButton message="Plus d'informations" position="right" to="/informations-massage" />
     </div>
 
   </div>
@@ -67,6 +75,10 @@ const items = ref([
   {
     label: 'Qu\'est-ce que le scratching ?',
     slot: 'scratching',
+  },
+  {
+    label: 'Les bienfaits du scratching et des papouilles',
+    slot: 'papouilles',
   },
   {
     label: 'Pourquoi ce concept ?',

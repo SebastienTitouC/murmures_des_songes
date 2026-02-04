@@ -17,13 +17,13 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Modelage énergétique, scratching à Goutevernisse | Aux murmures des songes',
+      title: 'Modelage énergétique, scratching et papouilles à Goutevernisse | Aux murmures des songes',
       htmlAttrs: {
         lang: 'fr',
       },
       meta: [
         { name: 'description', content: 'Aux murmures des songes - modelage énergétique et scratching à Goutevernisse' },
-        { name: 'keywords', content: 'modelage énergétique, scratching, Goutevernisse, bien-être, thérapie' },
+        { name: 'keywords', content: 'papouilles, massage, modelage énergétique, scratching, Goutevernisse, bien-être, volvestre, carbonne, toulouse' },
         { name: 'author', content: 'Aux murmures des songes' },
         { name: 'robots', content: 'index, follow' },
         { property: 'og:title', content: 'Aux murmures des songes | Modelage énergétique' },

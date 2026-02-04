@@ -42,7 +42,7 @@
         </p>
 
         <div class="mt-8">
-          <CommonSend class="m-auto" />
+          <CommonSend class="m-auto text-center" />
         </div>
       </div>
 
@@ -65,7 +65,7 @@
     </div>
 
 
-    <div class="grid_wrapper">
+    <div class="grid_wrapper impair">
       <div class="card">
         <CommonImage position="left" image="/images/energie.webp" alt="Image concept modelage énergétique" />
         <h1>Qu’est-ce qu’un modelage énergétique ?</h1>
@@ -89,6 +89,17 @@
           L’objectif est de stimuler les terminaisons nerveuses superficielles de la peau et ainsi favoriser le
           relâchement du corps et de
           l’esprit.
+        </p>
+      </div>
+
+      <div class="card">
+        <CommonImage position="left" image="/images/autres.webp" alt="Scratching" />
+        <h1>Les bienfaits du scratching et des papouilles</h1>
+        <p>
+          Le scratching et donc les papouilles permettent une détente rapide et un sentiment de réconfort. <br>
+          Se faire papouiller c’est prendre le temps de s’évader dans un monde intérieur ou tout est doux. <br>
+          Vous êtes stréssé.e, surmené.e, fatigué.e ? La papouille est faite pour vous ! <br>
+          Venez vous détendre et laissez vous glisser dans cet univers apaisant.
         </p>
       </div>
   

@@ -12,13 +12,13 @@
                   <NuxtLink to="/">Accueil</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/a-propos">Qui je suis ?</NuxtLink>
+                  <NuxtLink to="/votre-praticienne-massage">Qui je suis ?</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/services">La séance</NuxtLink>
+                  <NuxtLink to="/seance-papouilles-scratching-modelage">La séance de massage</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/plus-d-informations">Plus d'infos</NuxtLink>
+                  <NuxtLink to="/informations-massage">Plus d'infos</NuxtLink>
                 </li>
               </ul>
             </nav>
@@ -63,6 +63,9 @@
                 Situé à Goutevernisse
               </h2>
             </div>
+            <h2 class="text-center text-sm opacity-50 max-w-[200px]">
+              Volvestre, proche de :<br> Carbonne, Cazères et Toulouse
+            </h2>
           </li>
         </ul>
       </nav>

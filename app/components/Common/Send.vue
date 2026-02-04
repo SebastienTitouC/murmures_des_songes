@@ -10,7 +10,7 @@
         </svg>
       </div>
     </div>
-    <span>Message</span>
+    <span>Réserver vos papouilles</span>
   </NuxtLink>
 </template>
 
@@ -25,7 +25,7 @@
   letter-spacing: .025rem;
   border-radius: 4px;
 
-  width: 140px;
+  width: 180px;
   min-height: 40px;
   background: var(--clr-chair);
 
@@ -58,11 +58,11 @@
 }
 
 .send_button:hover svg {
-  transform: translateX(2.5em) rotate(45deg) scale(1.1);
+  transform: translateX(3.5em) rotate(45deg) scale(1.1);
 }
 
 .send_button:hover span {
-  transform: translateX(6em);
+  transform: translateX(7.5em);
 }
 
 .send_button:active {

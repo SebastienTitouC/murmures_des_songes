@@ -1,12 +1,13 @@
 <template>
   <div v-show="model" class="menu_wrapper" :class='{ "open": model }'>
-    <CommonSend class="button" :class='{ "appear": model }' />
+    <CommonSend class="button text-center" :class='{ "appear": model }' />
     <ul class="link_wrapper" :class='{ "appear": model }'>
-      <NuxtLink to="/a-propos" @click="onClick">
+      <NuxtLink to="/votre-praticienne-massage" @click="onClick">
         <li class="link_card">
 
           <div class="link_img_wrapper">
-            <img class="link_img object-top" src="/images/marion.webp" alt="Photo de Marion" width="120px" height="120px" >
+            <img class="link_img object-top" src="/images/marion.webp" alt="Photo de Marion" width="120px"
+              height="120px">
           </div>
 
           <div class="flex flex-col justify-center gap-1 py-2">
@@ -26,15 +27,15 @@
         </li>
       </NuxtLink>
 
-      <NuxtLink to="/services" @click="onClick">
+      <NuxtLink to="/seance-papouilles-scratching-modelage" @click="onClick">
         <li class="link_card">
           <div class="link_img_wrapper">
-            <img class="link_img" src="/images/massage.webp" alt="Scratching" width="120px" height="120px" >
+            <img class="link_img" src="/images/massage.webp" alt="Scratching" width="120px" height="120px">
           </div>
           <div class="flex flex-col justify-center gap-1 py-2">
             <div class="small_title">
               <h1 class="link_title">
-                La séance
+                La séance de massage
               </h1>
               <svg class="arrow" viewBox="0 0 20 18" fill="none">
                 <path d="M0 9H18" stroke-width="2"></path>
@@ -48,10 +49,11 @@
         </li>
       </NuxtLink>
 
-      <NuxtLink to="/plus-d-informations" @click="onClick">
+      <NuxtLink to="/informations-massage" @click="onClick">
         <li class="link_card">
           <div class="link_img_wrapper">
-            <img class="link_img object-bottom" src="/images/bureau.webp" alt="Photo du bureau" width="120px" height="120px" >
+            <img class="link_img object-bottom" src="/images/bureau.webp" alt="Photo du bureau" width="120px"
+              height="120px">
           </div>
           <div class="flex flex-col justify-center gap-1 py-2">
             <div class="small_title">
@@ -72,7 +74,7 @@
     </ul>
 
     <div class="flex justify-center items-end gap-1 text-(--clr-chair) opacity-0 mb-8" :class='{ "appear": model }'>
-      <img class="size-6" src="@/assets/svg/location.svg" alt="Location icon" width="24px" height="24px" >
+      <img class="size-6" src="@/assets/svg/location.svg" alt="Location icon" width="24px" height="24px">
       <h2 class="font-bold">
         Situé à Goutevernisse
       </h2>
@@ -85,7 +87,7 @@
 const model = defineModel<boolean>()
 
 const onClick = () => {
-	model.value = false
+  model.value = false
 }
 
 
@@ -105,7 +107,7 @@ const onClick = () => {
   padding-top: calc(82px + 3rem);
   gap: 3rem;
   position: fixed;
-  overflow-y:scroll;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   z-index: 900;
@@ -227,34 +229,34 @@ const onClick = () => {
 }
 
 @media (min-width: 475px) {
-    /* Mobile */
+  /* Mobile */
 }
 
 @media (min-width: 640px) {
-    /* Mobile large */
+  /* Mobile large */
 }
 
 @media (min-width: 768px) {
-    /* Tablette */
-    
-.link_title {
-  font-size: var(--size-xl);
-}
+  /* Tablette */
 
-.link_description {
-  font-size: var(--size-base);
-}
+  .link_title {
+    font-size: var(--size-xl);
+  }
+
+  .link_description {
+    font-size: var(--size-base);
+  }
 }
 
 @media (min-width: 1024px) {
-    /* Desktop */
+  /* Desktop */
 }
 
 @media (min-width: 1280px) {
-    /* Desktop large */
+  /* Desktop large */
 }
 
 @media (min-width: 1536px) {
-    /* Desktop xl */
+  /* Desktop xl */
 }
 </style>

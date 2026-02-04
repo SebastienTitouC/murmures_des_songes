@@ -4,8 +4,7 @@
 
     <CommonText class="max-w-[600px] m-auto ">
       <h1>
-        Bonjour, moi c'est <b>Marion</b>, je pratique le <b>modelage énergétique</b>
-        et le <b>scratching</b>.
+        Bonjour, moi c'est <b>Marion</b>, je pratique les massages type <b>papouilles</b>, scratching et le <b>modelage énergétique</b>.
       </h1>
     </CommonText>
 
@@ -18,7 +17,7 @@
           C’est une <b>expérience douce</b>, surprenante et profondément <b>réconfortante</b>. 
         </h1>
       </CommonText>
-      <CommonButton class="grid-btn text-right" message="En savoir plus" to="/a-propos" position="right" />
+      <CommonButton class="grid-btn text-right" message="En savoir plus" to="/votre-praticienne-massage" position="right" />
     </div>
   </div>
 </template>

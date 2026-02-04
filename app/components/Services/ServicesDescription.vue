@@ -47,7 +47,7 @@
         Laissez-vous tenter : votre corps saura vous remercier.
       </h1>
     </CommonText>
-    <CommonButton message="Toutes les infos" to="/plus-d-informations" position="center" />
+    <CommonButton message="Toutes les infos" to="/informations-massage" position="center" />
   </div>
 
 </template>

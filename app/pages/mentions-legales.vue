@@ -7,7 +7,8 @@
 
 <script lang="ts" setup>
 import { useCanonical } from '~/composables/useCanonical';
-useCanonical()
+useCanonical('Modelage énergétique, scratching et papouilles à Goutevernisse | Aux murmures des songes',
+ 'Aux murmures des songes - modelage énergétique et scratching à Goutevernisse')
 </script>
 
 <style scoped>

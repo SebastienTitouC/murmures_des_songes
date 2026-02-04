@@ -8,7 +8,7 @@
       </h1>
     </CommonText>
 
-    <CommonSend  class="m-auto"/>
+    <CommonSend  class="button text-center m-auto"/>
   </div>
 </template>
 

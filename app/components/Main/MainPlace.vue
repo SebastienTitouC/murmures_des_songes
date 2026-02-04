@@ -21,7 +21,7 @@
       </h1>
     </CommonText>
 
-    <CommonButton message="Découvrir la séance" to="/services" position="center" />
+    <CommonButton message="Découvrir la séance" to="/seance-papouilles-scratching-modelage" position="center" />
 
   </div>
 </template>
