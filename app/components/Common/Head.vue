@@ -1,13 +1,17 @@
 <template>
   <div class="wrapper">
     <img :src="bgImage" preload fetchpriority="high" decoding="async" class="bg" alt="Image d'en tête">
-    <div class="filter"></div>
+    <div class="filter" />
     <div class="head">
       <Motion :initial='{ opacity: 0, y: "80px" }' :animate='{ opacity: 1, y: "0%", }'
         :transition='{ duration: 0.6, delay: 0.0 }'>
         <h1>
           {{ mainTitle }}
         </h1>
+        <h1 v-if="secondTitle !== ''" class="secondTitle">et</h1>
+        <h2 class="secondTitle">
+          {{ secondTitle }}
+        </h2>
       </Motion>
       <Motion :initial='{
         opacity: 0,
@@ -19,7 +23,7 @@
         duration: 0.6,
         delay: 0.0
       }'>
-        <h2>
+        <h2 class="headDescription">
           {{ description }}
         </h2>
 
@@ -46,6 +50,7 @@ import { Motion } from 'motion-v';
 
 defineProps<{
   mainTitle: string,
+  secondTitle: string,
   description: string,
   withButton: boolean,
   bgImage: string
@@ -105,7 +110,8 @@ defineProps<{
   padding: 0 1rem;
 }
 
-.head h1 {
+.head h1,
+.secondTitle {
   font-family: var(--font-title);
   font-size: 3.5rem;
   line-height: 3.5rem;
@@ -113,7 +119,11 @@ defineProps<{
   text-shadow: 0 1px 0 #101010;
 }
 
-.head h2 {
+.secondTitle {
+  font-size: var(--size-4xl);
+}
+
+.headDescription {
   font-family: var(--font-sans);
   font-size: var(--size-xl);
   font-weight: 900;
@@ -123,6 +133,7 @@ defineProps<{
 
 }
 
+
 @media (min-width: 475px) {
 
   /* Mobile */
@@ -130,7 +141,11 @@ defineProps<{
     font-size: var(--size-6xl);
   }
 
-  .head h2 {
+  .secondTitle {
+    font-size: var(--size-5xl);
+  }
+
+  .headDescription {
     font-size: var(--size-2xl);
   }
 }

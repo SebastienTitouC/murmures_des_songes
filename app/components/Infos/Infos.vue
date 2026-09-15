@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CommonHead mainTitle="Toutes les infos"
+    <CommonHead main-title="Toutes les infos" second-title=""
       description="Lieu, tarif, prise de contact... ici toutes vos questions trouvent leur réponse !"
       :with-button='false' bg-image="/images/bureau.webp" />
     <InfosDescription />

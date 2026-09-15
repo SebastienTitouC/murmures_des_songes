@@ -19,7 +19,7 @@
         </h2>
 
         <p class="description">
-          ... et si deux mots me qualifient c’est bien ceux qui caractérisent les natifs des poissons, dont je fais
+          ... et si deux mots me qualifient c’est bien ceux qui caractérisent les natifs des Poissons, dont je fais
           partie, qui sont sensibles et rêveurs.
         </p>
       </div>
@@ -54,12 +54,25 @@
       </div>
     </div>
     <CommonText class="md:mt-8">
-      <h1>
+      <p>
         C'est pour cela que j'ai décidé de m'initier au <b>modelage énergétique</b> et au <b>scratching</b> afin de vous
         apporter bien-être et lâcher-prise.
-      </h1>
+      </p>
+      <br>
+      <p>
+        Je pratique également le <b>tirage de cartes</b> afin de vous accompagner dans vos
+        questionnements et/ou de vous apporter un éclairage sur certaines situations.
+        L’Oracle Gé m’accompagne depuis près de 15 ans.
+      </p>
+      <p> Au fil du temps, j’ai appris à apprécier <b>la richesse</b> de ses symboles ainsi que la pertinence <b>des
+          réflexions</b> qu’il peut susciter.
+      </p>
     </CommonText>
-    <CommonButton message="Découvrir la séance" to="/seance-papouilles-scratching-modelage" position="center" />
+
+    <div class="flex flex-col md:flex-row gap-2 w-fit m-auto">
+      <CommonButton message="La séance de  massage" to="/seance-papouilles-scratching-modelage" position="center" />
+      <CommonButton message="Le tirage de cartes" to="/seance-tirage-de-cartes" position="center" />
+    </div>
   </div>
 
 </template>

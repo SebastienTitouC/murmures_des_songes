@@ -1,13 +1,18 @@
 <template>
   <div class="video_wrapper">
-    <video class="video" muted="true" autoplay loop playsinline aria-label="Démonstration de la séance de massage">
-      <source src="/massage.webm" type="video/webm">
-      <source src="/massage.mp4" type="video/mp4">
+    <video class="video" muted="true" autoplay loop playsinline
+      :aria-label='"Démonstration de la séance de " + videoName'>
+      <source :src='"/" + videoName + ".webm"' type="video/webm">
+      <source :src='"/" + videoName + ".mp4"' type="video/mp4">
     </video>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+defineProps<{
+  videoName: string,
+}>()
+</script>
 
 <style scoped>
 .video_wrapper {

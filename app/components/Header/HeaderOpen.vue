@@ -13,11 +13,11 @@
           <div class="flex flex-col justify-center gap-1 py-2">
             <div class="small_title">
               <h1 class="link_title">
-                Qui suis je ?
+                Qui suis-je ?
               </h1>
               <svg class="arrow" viewBox="0 0 20 18" fill="none">
-                <path d="M0 9H18" stroke-width="2"></path>
-                <path d="M10 1L18 9L10 17" stroke-width="2"></path>
+                <path d="M0 9H18" stroke-width="2" />
+                <path d="M10 1L18 9L10 17" stroke-width="2" />
               </svg>
             </div>
             <p class="link_description">
@@ -38,8 +38,8 @@
                 La séance de massage
               </h1>
               <svg class="arrow" viewBox="0 0 20 18" fill="none">
-                <path d="M0 9H18" stroke-width="2"></path>
-                <path d="M10 1L18 9L10 17" stroke-width="2"></path>
+                <path d="M0 9H18" stroke-width="2" />
+                <path d="M10 1L18 9L10 17" stroke-width="2" />
               </svg>
             </div>
             <p class="link_description">
@@ -49,7 +49,29 @@
         </li>
       </NuxtLink>
 
-      <NuxtLink to="/informations-massage" @click="onClick">
+      <NuxtLink to="/seance-tirage-de-cartes" @click="onClick">
+        <li class="link_card">
+          <div class="link_img_wrapper">
+            <img class="link_img" src="/images/oracle_ge.webp" alt="Scratching" width="120px" height="120px">
+          </div>
+          <div class="flex flex-col justify-center gap-1 py-2">
+            <div class="small_title">
+              <h1 class="link_title">
+                Tirage de cartes
+              </h1>
+              <svg class="arrow" viewBox="0 0 20 18" fill="none">
+                <path d="M0 9H18" stroke-width="2" />
+                <path d="M10 1L18 9L10 17" stroke-width="2" />
+              </svg>
+            </div>
+            <p class="link_description">
+              Explorez vos questionnements grâce au tirage de cartes.
+            </p>
+          </div>
+        </li>
+      </NuxtLink>
+
+      <NuxtLink to="/informations-massage-et-tirage-cartes" @click="onClick">
         <li class="link_card">
           <div class="link_img_wrapper">
             <img class="link_img object-bottom" src="/images/bureau.webp" alt="Photo du bureau" width="120px"
@@ -61,8 +83,8 @@
                 Plus d'infos
               </h1>
               <svg class="arrow" viewBox="0 0 20 18" fill="none">
-                <path d="M0 9H18" stroke-width="2"></path>
-                <path d="M10 1L18 9L10 17" stroke-width="2"></path>
+                <path d="M0 9H18" stroke-width="2" />
+                <path d="M10 1L18 9L10 17" stroke-width="2" />
               </svg>
             </div>
             <p class="link_description">

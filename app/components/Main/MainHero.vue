@@ -4,7 +4,12 @@
 
     <CommonText class="max-w-[600px] m-auto ">
       <h1>
-        Bonjour, moi c'est <b>Marion</b>, je pratique les massages type <b>papouilles</b>, scratching et le <b>modelage énergétique</b>.
+        Bonjour, moi c'est <b>Marion</b>, je pratique les massages type <b>papouilles</b>, scratching et le <b>modelage
+          énergétique</b>.
+      </h1>
+      <br>
+      <h1>
+        Je pratique également le <b>tirage des cartes</b> au travers de mon <b>Oracle Gé</b>.
       </h1>
     </CommonText>
 
@@ -12,12 +17,20 @@
       <MainImage />
 
       <CommonText class="">
-        <h1>
+        <p>
           Dans mon <b>cocon</b>, je crée un moment suspendu rien que pour vous.
-          C’est une <b>expérience douce</b>, surprenante et profondément <b>réconfortante</b>. 
-        </h1>
+          C’est une <b>expérience douce</b>, surprenante et profondément <b>réconfortante</b>.
+        </p>
+        <br>
+        <p>
+          À travers l’Oracle Gé, je vous accompagne dans une séance <b>d’introspection</b> où vous tirez vous-même les
+          cartes
+          et où nous explorons ensemble leurs <b>symboles</b>, leurs messages et ce qu’ils peuvent faire résonner en
+          vous.
+        </p>
       </CommonText>
-      <CommonButton class="grid-btn text-right" message="En savoir plus" to="/votre-praticienne-massage" position="right" />
+      <CommonButton class="grid-btn text-right" message="En savoir plus" to="/votre-praticienne-massage"
+        position="right" />
     </div>
   </div>
 </template>

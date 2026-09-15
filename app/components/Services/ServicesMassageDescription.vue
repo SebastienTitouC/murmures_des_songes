@@ -4,7 +4,7 @@
     <CommonOrnament :svg="massageSVG" alt="Ornement - Massage" />
 
     <div v-if="videoControls.show" class="content_grid">
-      <ServicesVideo />
+      <ServicesVideo video-name="massage" />
       <div>
         <div class="flex justify-center gap-4">
           <img v-if="!videoControls.playing" class="controls" src="@/assets/svg/play.svg" alt="Lire la vidéo"
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <ServicesProcedure />
+    <ServicesMassageProcedure />
 
     <CommonText class="md:mt-8">
       <h1>
@@ -47,7 +47,7 @@
         Laissez-vous tenter : votre corps saura vous remercier.
       </h1>
     </CommonText>
-    <CommonButton message="Toutes les infos" to="/informations-massage" position="center" />
+    <CommonButton message="Toutes les infos" to="/informations-massage-et-tirage-cartes" position="center" />
   </div>
 
 </template>

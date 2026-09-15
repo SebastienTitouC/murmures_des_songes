@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CommonHead main-title="Papouilles et scratching"
+    <CommonHead main-title="Papouilles, scratching" second-title="Tirage de cartes"
       description="Redécouvrez la sensation apaisante du lâcher-prise dans un chalet privé, loin du bruit du monde."
       :with-button="true" bg-image="/images/outils2.webp" />
     <MainHero />

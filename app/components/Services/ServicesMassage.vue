@@ -1,9 +1,9 @@
 <template>
   <div>
-    <CommonHead mainTitle="La séance de massage"
+    <CommonHead main-title="La séance de massage" second-title=""
       description="Offrez-vous un moment de bien-être pour prendre soin de vous et de votre esprit, grâce aux papouilles."
       :with-button='false' bg-image="/images/massage.webp" />
-    <ServicesDescription />
+    <ServicesMassageDescription />
 
   </div>
 

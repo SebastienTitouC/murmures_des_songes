@@ -8,7 +8,7 @@
     <div class="grid_wrapper impair">
       <div class="card">
         <CommonImage position="left" image="/images/goutevernisse.webp" alt="Village de Goutevernisse dans le 31" />
-        <h1>Lieux : Goutevernisse</h1>
+        <h1>Lieu : Goutevernisse</h1>
         <p>
           Prestations sur la commune de Goutevernisse à 45 min de Toulouse, 15 minutes de Carbonne et Cazères.
         </p>
@@ -23,15 +23,27 @@
       <div class="card">
         <CommonImage position="left" image="/images/decoration.webp" alt="Image concept tarifs" />
         <h1>Tarifs</h1>
-        <p>
-          Tarif unique de 25 euros, pour une séance de 30 minutes (20 minutes de soins).
+        <p class="text-center">
+          Paiement en espèces, par virement, par PayPal ou Wero.
         </p>
+        <p />
+        <h2 class="underline">Séance de papouilles</h2>
         <p>
-          Paiement en espèce, par virement, par Paypal ou Wero.
+          Tarif unique de <b>25 euros</b>, pour une séance de 30 minutes (20 minutes de soins).
         </p>
+        <h2 class="underline">Tirage des cartes</h2>
+        <p class="pb-2">
+          Tarif de lancement : <b>30 euros</b>, pour une séance de 45 minutes (35 € à partir du 1ᵉʳ janvier 2027).
+        </p>
+        <br>
+        <h2 class="underline text-center">Formule L’Éveil des Songes : <br> Massage + Oracle</h2>
+        <p>
+          Le massage apaise le corps, les cartes ouvrent la réflexion : <b>50 euros</b> au lieu de 55&nbsp;€.
+        </p>
+
       </div>
 
-      <div class="card">
+      <div class="card ">
         <CommonImage position="left" image="/images/rendez-vous.webp" alt="Image concept rendez-vous" />
         <h1>Prise de rendez-vous</h1>
         <p>
@@ -46,11 +58,11 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card grid_wrapper_impair">
         <CommonImage position="left" image="/images/outils.webp" alt="Outils de soin" />
         <h1>Indications utiles</h1>
         <p>
-          Pratiques non médicales, non thérapeutiques, ni sexuelles
+          Pratiques non médicales, non thérapeutiques, ni sexuelles.
         </p>
         <p>
           Parking privé à disposition.
@@ -79,7 +91,7 @@
           C’est donc une approche douce et une invitation à sa propre reconnexion.
         </p>
       </div>
-  
+
       <div class="card">
         <CommonImage position="left" image="/images/massage.webp" alt="Scratching" />
         <h1>Qu'est-ce que le scratching ?</h1>
@@ -97,21 +109,48 @@
         <h1>Les bienfaits du scratching et des papouilles</h1>
         <p>
           Le scratching et donc les papouilles permettent une détente rapide et un sentiment de réconfort. <br>
-          Se faire papouiller c’est prendre le temps de s’évader dans un monde intérieur ou tout est doux. <br>
+          Se faire papouiller c’est prendre le temps de s’évader dans un monde intérieur où tout est doux. <br>
           Vous êtes stréssé.e, surmené.e, fatigué.e ? La papouille est faite pour vous ! <br>
           Venez vous détendre et laissez vous glisser dans cet univers apaisant.
         </p>
       </div>
-  
+
       <div class="card">
         <CommonImage position="left" image="/images/entree_livres.webp" alt="Photo de l'entrée" />
         <h1>Pourquoi ce concept ?</h1>
         <p>
           Durant des phases de stress intense, j’ai cherché un moyen d’apaiser mon mental. <br>
-          J’ai alors découvert l’ASMR qui reproduit parfois ces « papouilles ». Le cerveau à l’impression de ressentir
+          J’ai alors découvert l’ASMR qui reproduit parfois ces « papouilles ». Le cerveau a l’impression de ressentir
           la sensation de bien-être que
           cela procure. J’ai eu envie d’aller plus loin, et de le proposer de manière réelle afin d’aider des personnes
           qui ont besoin d’un instant de repos et qu’on prenne soin d’eux.
+          <br>
+          Quant à l’Oracle Gé, il m’accompagne depuis près de 15 ans. Au fil des années, j’ai appris à apprécier la
+          richesse de ses symboles et la justesse des réflexions qu’il peut faire émerger.
+
+          C’est un Oracle que je trouve particulièrement pertinent pour éclairer les situations et prendre du recul, et
+          que j’ai naturellement choisi comme support pour vous accompagner lors de ces séances.
+        </p>
+      </div>
+      <div class="card">
+        <CommonImage position="left" image="/images/question-mark.webp" alt="Photo de l'entrée" />
+        <h1>Dois-je avoir une question précise pour faire un tirage de cartes ?</h1>
+        <p>
+          La séance s'adapte, que ce soit pour des questions personnelles, des choix à faire, une situation qui vous
+          préoccupe, vos relations, vos projets ou simplement pour y voir plus clair. <br>
+          Plusieurs questions/sujets peuvent être abordés au cours des 45 minutes.<br>
+        </p>
+      </div>
+      <div class="card">
+        <CommonImage position="left" image="/images/oracle-square.webp" alt="Photo de l'entrée" />
+        <h1>Est-ce que les cartes vont me donner une réponse précise ?</h1>
+        <p>
+          Les cartes ne prédisent pas votre avenir : elles offrent un support pour éclairer une situation, faire émerger
+          des pistes de réflexion et parfois dégrossir ce qui vous semble confus. Vous restez libre de vos choix et de
+          votre chemin. <br>
+          Mais, les cartes peuvent apporter des réponses étonnamment claires. Elles permettent notamment de mettre en
+          lumière certains éléments d’une situation, de faire ressortir des aspects auxquels vous n’aviez pas pensé ou
+          de mieux comprendre ce qui vous questionne.
         </p>
       </div>
 
@@ -155,6 +194,11 @@ import massageSVG from '@/assets/svg/massage.svg'
   text-align: center;
 }
 
+.card h2 {
+  font-weight: 900;
+
+}
+
 .card p {
   align-self: flex-start;
   font-family: var(--font-serif);
@@ -179,7 +223,7 @@ import massageSVG from '@/assets/svg/massage.svg'
 @media (min-width: 1024px) {
 
   /* Desktop */
-  .grid_wrapper.impair .card:last-child {
+  .grid_wrapper_impair {
     grid-column: 2/3;
   }
 }

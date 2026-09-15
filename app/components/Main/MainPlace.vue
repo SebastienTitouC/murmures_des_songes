@@ -15,14 +15,16 @@
 
     <CommonText>
       <h1>
-        Je vous recois dans une pièce <b>douce</b> au ton crème et bois naturel, avec une table de soin
+        Je vous reçois dans une pièce <b>douce</b> au ton crème et bois naturel, avec une table de soin
         <b>confortable</b>,
         dans une atmosphère <b>apaisante</b>.
       </h1>
     </CommonText>
 
-    <CommonButton message="Découvrir la séance" to="/seance-papouilles-scratching-modelage" position="center" />
-
+    <div class="flex flex-col md:flex-row gap-2 w-fit m-auto">
+      <CommonButton message="La séance de  massage" to="/seance-papouilles-scratching-modelage" position="center" />
+      <CommonButton message="Le tirage de cartes" to="/seance-tirage-de-cartes" position="center" />
+    </div>
   </div>
 </template>
 

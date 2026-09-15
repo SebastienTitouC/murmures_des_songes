@@ -1,6 +1,6 @@
 <template>
   <div :class="{ 'right': position == 'right', 'left': position == 'left', 'center': position == 'center' }">
-    <NuxtLink :href="to" class="main_button">
+    <NuxtLink :href="to" class="main_button line">
       {{ message }}
     </NuxtLink>
 
@@ -23,6 +23,8 @@ defineProps<{
   font-weight: 600;
   letter-spacing: .025rem;
   border-radius: 4px;
+  word-wrap: break-word;
+
 }
 
 .main_button:hover,
@@ -52,38 +54,38 @@ defineProps<{
 
 
 @media (min-width: 475px) {
-    /* Mobile */
+  /* Mobile */
 }
 
 @media (min-width: 640px) {
-    /* Mobile large */
+  /* Mobile large */
 
-.right {
-  text-align: right;
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
+  .right {
+    text-align: right;
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
 
-.left {
-  text-align: left;
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
+  .left {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
-    /* Tablette */
+  /* Tablette */
 }
 
 @media (min-width: 1024px) {
-    /* Desktop */
+  /* Desktop */
 }
 
 @media (min-width: 1280px) {
-    /* Desktop large */
+  /* Desktop large */
 }
 
 @media (min-width: 1536px) {
-    /* Desktop xl */
+  /* Desktop xl */
 }
 </style>

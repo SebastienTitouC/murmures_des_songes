@@ -18,7 +18,10 @@
                   <NuxtLink to="/seance-papouilles-scratching-modelage">La séance de massage</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink to="/informations-massage">Plus d'infos</NuxtLink>
+                  <NuxtLink to="/seance-tirage-de-cartes">Tirage de cartes</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/informations-massage-et-tirage-cartes">Plus d'infos</NuxtLink>
                 </li>
               </ul>
             </nav>
